@@ -144,7 +144,7 @@ a:hover {
 .intro {
 	position: relative;
 	display: block;
-	padding: 20px;
+	padding: 20px 0 40px;
 }
 
 	.intro__text {
@@ -200,7 +200,7 @@ a:hover {
 @media only screen and (min-width: 768px) {
 	.intro {
 		display: flex;
-		padding: 20px 0 70px;
+		padding-bottom: 70px;
 	    justify-content: space-between;
 	}
 
@@ -240,32 +240,9 @@ a:hover {
 	position: relative;
 }
 
-.projects:after {
-    content: '';
-    position: absolute;
-    width: 70%;
-    height: 60%;
-    right: -20px;
-    bottom: -15px;
-    z-index: -1;
-    background-color: #f7f7f7;
-    mix-blend-mode: multiply;
-}
-
 	.projects__list {
 		margin-bottom: 70px;
 		list-style: none;
-	}
-
-	.projects__list:before {
-	    content: '';
-	    position: absolute;
-	    width: 70%;
-	    height: 290px;
-	    left: -20px;
-	    top: -20px;
-	    z-index: -1;
-	    background-color: #f7f7f7;
 	}
 
 		.projects__project {
@@ -277,7 +254,7 @@ a:hover {
 
 			.projects__project-link {
 				display: block;
-				overflow: hidden;
+				font-size: 0;
 				text-decoration: none;
 			}
 
@@ -294,7 +271,7 @@ a:hover {
 
 				.projects__project-title {
 					display: block;
-				    padding: 10px 35px;
+				    padding: 10px 20px;
 					font-size: 18px;
 				    background: #4bbed4;
 				}
@@ -306,19 +283,42 @@ a:hover {
 				}
 
 @media only screen and (min-width: 768px) {
-	.projects__list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
 
-		.projects__project {
-			width: 48.5%;
+	.projects:after {
+	    content: '';
+	    position: absolute;
+	    width: 70%;
+	    height: 60%;
+	    right: -20px;
+	    bottom: -15px;
+	    z-index: -1;
+	    background-color: #f7f7f7;
+	    mix-blend-mode: multiply;
+	}
+		.projects__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		}
 
-			.projects__project-link {
-				padding: 20px;
+		.projects__list:before {
+		    content: '';
+		    position: absolute;
+		    width: 70%;
+		    height: 290px;
+		    left: -20px;
+		    top: -20px;
+		    z-index: -1;
+		    background-color: #f7f7f7;
+		}
+
+			.projects__project {
+				width: 48.5%;
 			}
+
+				.projects__project-link {
+					padding: 20px;
+				}
 }
 
 @media only screen and (min-width: 480px) {
@@ -326,7 +326,7 @@ a:hover {
 	    position: absolute;
 	    top: 20%;
 	    left: -5px;
-	    padding: 10px 35px;
+	    padding: 10px 25px;
 		box-shadow: 0 2px 7px 0 rgba(0,0,0,.1);
 	}
 
@@ -348,7 +348,7 @@ a:hover {
 .contact {
 	text-align: center;
     border-bottom: 5px solid #dc769c;
-    padding: 10px 0;
+    padding: 10px;
 	font-size: 18px;
 }
 
