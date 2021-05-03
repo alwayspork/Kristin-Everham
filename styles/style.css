@@ -161,7 +161,7 @@ nav a:hover {
     content: "";
     position: absolute;
     width: 70%;
-    height: 410px;
+    height: 290px;
     left: -20px;
     top: -20px;
     z-index: -1;
@@ -297,16 +297,6 @@ h1.section-title {
 	display: inline-block;
 	vertical-align: middle;
 }
-.main .half {
-	width: 49.5%;
-	display: inline-block;
-	vertical-align: middle;
-}
-.main .third {
-	width: 32.8%;
-	display: inline-block;
-	vertical-align: middle;
-}
 
 @media only screen and (max-width: 768px) {
 	nav li {
@@ -349,10 +339,6 @@ h1.section-title {
 	}
 	.main .quarter {
 		width: 49.2%;
-	}
-	.main .half,
-	.main .third {
-		width: 100%;
 	}
 	.item-title {
 		position: static;
