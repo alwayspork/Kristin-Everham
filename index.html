@@ -183,13 +183,16 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script>
-		$(document).ready(function() {
-			$("nav a").click(function(e){
-				e.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-			});
+		const scrollToElement = (e) => {
+			e.preventDefault();
+			if (!e.target.hash) { return; }
+
+			document.querySelector(e.target.hash).scrollIntoView();
+		};
+
+		document.querySelectorAll('.navigation__link').forEach((link) => {
+			link.addEventListener('click', scrollToElement);
 		});
 	</script>
 </body>

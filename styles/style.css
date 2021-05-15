@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+html {
+ 	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Noto Sans JP', Helvetica, Arial, sans-serif;
 	color: #222232;
