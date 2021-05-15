@@ -32,6 +32,17 @@ a:hover {
 
 
 /*UTILITY CLASSES*/
+.u-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
 .u-inner {
 	margin: 0 auto;
 	position: relative;
@@ -183,10 +194,6 @@ a:hover {
 			margin: 0;
 			padding: 20px 20px 25px;
 		}
-
-			.info div {
-				margin-bottom: 5px;
-			}
 
 			.intro__card-name {
 				display: block;
