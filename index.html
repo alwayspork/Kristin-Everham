@@ -28,43 +28,20 @@
 
 <body>
 
-	<header class="header">
-		<div class="u-inner">
-			<h1 class="header__heading">
-				<a class="header__heading-link" href="/">
-					<span class="header__heading-hero">Kristin Everham</span>
-					<span class="header__heading-sub-line">Experienced front-end engineer with a track record of successful leadership.</span>
-				</a>
-			</h1>
-		</div>
-	</header>
-
-	<nav class="navigation">
-		<div class="u-inner">
-			<ul class="navigation__list">
-				<li class="navigation__list-item">
-					<a class="navigation__link" href="#hello">Hello</a>
-				</li>
-				<li class="navigation__list-item">
-					<a class="navigation__link" href="#projects">Projects</a>
-				</li>
-				<li class="navigation__list-item">
-					<a class="navigation__link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
 	<main class="u-inner">
 
-		<div class="intro" id="hello">
+		<div class="intro">
 
 			<div class="intro__text">
-				<h2 class="u-section-title">Hello</h2>
+
+				<h1 class="header__heading">
+					<span class="header__heading-hero">Kristin Everham</span>
+					<span class="header__heading-sub-line">Experienced front-end engineer with a track record of successful leadership.</span>
+				</h1>
 
 				<p>Hi there! My name's Kristin.</p>
 
-				<p>I'm a front-end engineer. I enjoy learning about good UI/UX practices, the latest in tech trends, and I try and make sure I'm constantly improving my work. In my spare time, I make hand-lettered greeting cards that I sell in <a class="intro__link" href="http://hensonhandmade.etsy.com" target="_blank" rel="noopener noreferrer" title="Henson Handmade on Etsy">my Etsy shop</a>.</p>
+				<p>I'm a front-end software engineer. I enjoy learning about good UI/UX practices, the latest in tech trends, and I try and make sure I'm constantly improving my work. In my spare time, I make hand-lettered greeting cards that I sell in <a class="intro__link" href="http://hensonhandmade.etsy.com" target="_blank" rel="noopener noreferrer" title="Henson Handmade on Etsy">my Etsy shop</a>.</p>
 
 				<p>Have a great idea? <a class="intro__link" href="mailto:kristin.everham@gmail.com">Let's connect!</a> Want to learn more about my work experience? Check out <a class="intro__link" href="Resume2022.pdf" title="Kristin Everham's resume" target="_blank">my resume</a> here.</p>
 
@@ -82,65 +59,7 @@
 			</div>
 
 		</div>
-
-		<div class="projects" id="projects">
-
-			<h2 class="u-section-title">Recent Side Projects</h2>
-
-			<ul class="projects__list">
-
-				<li class="projects__project">
-					<a class="projects__project-link" href="/work-implicit-bias" title="Implicit Bias presentation">
-						<img class="projects__project-image" src="images/implicitbias-thumb.png" alt="implicit bias slide" />
-						<span class="projects__project-title">
-							Implicit Bias
-							<span class="u-sr-only">skills include</span>
-							<span class="projects__project-description">presentation</span>
-						</span>
-					</a>
-				</li>
-
-				<li class="projects__project">
-					<a class="projects__project-link" href="/work-hand-lettering" title="Hand Lettering - Bear">
-						<img class="projects__project-image" src="images/lettering-thumb.jpg" alt="I cant bear to be without you" />
-						<span class="projects__project-title">
-							The Hand Lettering Project
-							<span class="u-sr-only">skills include</span>
-							<span class="projects__project-description">lettering, calligraphy, illustration</span>
-						</span>
-					</a>
-				</li>
-
-				<li class="projects__project">
-					<a class="projects__project-link" href="/work-dice-bag-app" title="Dice-Bag iOS app">
-						<img class="projects__project-image" src="images/dice-thumb.png" alt="Dice-Bag app" />
-						<span class="projects__project-title">
-							Dice Bag - iPhone and Web App
-							<span class="u-sr-only">skills include</span>
-							<span class="projects__project-description">app design, app development, mobile development</span>
-						</span>
-					</a>
-				</li>
-
-				<li class="projects__project">
-					<a class="projects__project-link" href="/work-cookie-thursday" title="Cookie Thursday website">
-						<img class="projects__project-image" src="images/cookiethurs-thumb.png" alt="Cookie Thursday website" />
-						<span class="projects__project-title">
-							Cookie Thursday
-							<span class="u-sr-only">skills include</span>
-							<span class="projects__project-description">web development</span>
-						</span>
-					</a>
-				</li>
-
-			</ul>
-
-		</div>
 	</main>
-
-	<div class="contact" id="contact">
-		<p>I'd love to connect. <a class="contact__link" href="mailto:kristin.everham@gmail.com">Drop me a line.</a></p>
-	</div>
 
 	<footer class="footer">
 		<div class="u-inner">
@@ -186,18 +105,5 @@
 
 		</div>
 	</footer>
-
-	<script>
-		const scrollToElement = (e) => {
-			e.preventDefault();
-			if (!e.target.hash) { return; }
-
-			document.querySelector(e.target.hash).scrollIntoView();
-		};
-
-		document.querySelectorAll('.navigation__link').forEach((link) => {
-			link.addEventListener('click', scrollToElement);
-		});
-	</script>
 </body>
 </html>
