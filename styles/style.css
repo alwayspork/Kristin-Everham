@@ -16,7 +16,7 @@ body {
     color: #222232;
     border: 15px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(180deg, #62c4d4, #dd769c);
+    border-image-source: linear-gradient(180deg, #62c4d4, #d0f666);
 }
 
 img {
@@ -110,51 +110,6 @@ a:hover {
             font-weight: 400;
             font-style: italic;
         }
-
-.navigation {
-    border-bottom: 5px solid #61c4d4;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    margin: 0 0 50px;
-    text-align: center;
-}
-
-    .navigation__list {
-        display: block;
-        list-style: none;
-    }
-
-        .navigation__list-item {
-            border-bottom: 1px solid #999;
-        }
-
-        .navigation__list-item:last-child {
-            border-bottom: 0;
-        }
-
-            .navigation__link {
-                display: block;
-                padding: 10px 0;
-                font-size: 18px;
-                text-decoration: none;
-            }
-
-            .navigation__link:hover {
-                color: #3f7e89;
-            }
-
-@media only screen and (min-width: 480px) {
-    .navigation__list {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .navigation__list-item {
-        border-bottom: 0;
-    }
-}
-
 
 /* HELLO SECTION */
 .intro {
@@ -251,7 +206,7 @@ a:hover {
     .footer__copyright {
         padding-top: 15px;
         font-size: 14px;
-        border-top: 2px solid #dd769c;
+        border-top: 2px solid #d0f666;
     }
 
 @media only screen and (min-width: 768px) {
